@@ -1,5 +1,118 @@
-@import url(./css/reset.css);
-@import url(./css/commons.css);
+/* RESET CSS DEFAULT */
+nav,
+ul,
+li,
+header,
+footer,
+h1,
+p,
+button,
+a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #1D252C;
+}
+
+
+/* CSS DEFAULT BY ALL SITE */
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #d8ce44;
+}
+
+main{
+    margin-top: 73px;
+    background: #fff;
+}
+
+button{
+    margin-top: 53px;
+    background: #56B280;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.6452px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 0;
+    cursor: pointer;
+    transition:.3s ease;
+}
+button:hover,
+button:focus,
+button:active{
+    opacity: 0.8;
+}
+
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.header{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.header-menu{
+    display: flex;
+    gap:60px;
+}
+
+.header-menu li a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #272727;
+    cursor: pointer;
+    transition:.3s ease;
+
+}
+
+.header-menu li a:hover,
+.header-menu li a:focus,
+.header-menu li a:active{
+    color: #56B280;
+}
+
+.profile-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.menu-home-item1 a::after{
+    content: url(./imagens/arrow-down.png);
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
 
 .hero{
     background-image: url(./imagens/hero.png);
