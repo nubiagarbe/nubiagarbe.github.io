@@ -1,0 +1,53 @@
+@import url(./css/reset.css);
+@import url(./css/commons.css);
+
+.hero{
+    background-image: url(./imagens/hero.png);
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .hero-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(247, 248, 250, 0.8);
+    backdrop-filter: blur(24px);
+    border-radius: 2px;
+    width: 730px;
+    height: 349px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.hero .hero-box h1,
+.hero .hero-box p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: #1D252C;
+}
+
+.hero .hero-box i {
+    font-size: 60px;
+}
+
+.hero .hero-box h1{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 58px;
+
+}
+
+.hero .hero-box p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding: 10px 20px 0 0; 
+}
+
+.hero .hero-box button{
+    width: 310px;
+}
