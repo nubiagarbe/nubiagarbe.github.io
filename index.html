@@ -14,13 +14,19 @@
         <meta name="rating" content="general">
     </head>
     <body>
-        <header class="header">
+       <!-- HEADER -->
+        
+       <header class="header">
             <section class="container">
                 <section class="header-content">
+                    
+                    <a href="#" title="Menu" class="header-menu-mobile">
+                    </a>
+                    
                     <a href="#" title="Logo">
                         <img src="./imagens/logo.png" alt="logo-candleaf" title="Logo Candleaf">
                     </a>
-                    <nav>
+                    <nav class="header-menu-desktop">
                             <ul class="header-menu">
                                 <li class="menu-home-item1">
                                     <a href="#" title="Discovery">Discovery</a>
@@ -43,19 +49,452 @@
                 </section>
             </section>
         </header>
+        
+        <!-- MAIN -->
         <main>
-           <section class="hero">
+           <!-- BANNER -->
+            <section class="hero">
                 <section class="hero-box">
                     <i>🌱</i>
                     <h1>The nature candle</h1>
                     <p>All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
-                    <button>Discovery our collection</button>
+                    <a class="button hero-button" href="#products-gallery" title="Discovery our collection">Discovery our collection</a>
                 </section>
            </section>
-            <section class="container">
-                <h1>todo meu conteudo</h1>
+            
+            <!-- PRODUTOS -->
+            <section id="products-gallery" class="products-gallery"> 
+                <section class="container">
+                    <section class="products-gallery-content"> 
+                        
+                        <h2 class="section-title">Products</h2>
+                        <p class="section-description">Order it for you or for your beloved ones </p>
+                        
+                        <section class="gallery">
+                            <!-- CARD 01 -->
+                            <a href="/spiced-mint.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-1.png" alt="produto-spiced-mint" title="Spiced Mint">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Spiced Mint</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+                        
+                            <!-- CARD 02 -->
+                            <a href="/sweet-straweberry.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-2.png" alt="produto-sweet-straweberry" title="Sweet Straweberry">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Sweet Straweberry</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 03 -->
+                            <a href="/cool-blueberries.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-3.png" alt="produto-cool-blueberries" title="Cool Blueberries">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Cool Blueberries</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 04 -->
+                            <a href="/juicy-lemon.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-4.png" alt="produto-juicy-lemon" title="Juicy Lemon">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Juicy Lemon</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 05 -->
+                            <a href="/product-name.html" title="Ir para o produto" class="card-link">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-5.png" alt="produto-product-name" title="Product name">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Product name</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 06 -->
+                            <a href="/fragrant-cinnamon.html" title="Ir para o produto" class="card-link">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-6.png" alt="produto-fragrant-cinnamon" title="Fragrant Cinnamon">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Fragrant Cinnamon</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 07 -->
+                            <a href="/summer-cherries.html" title="Ir para o produto" class="card-link">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-7.png" alt="produto-summer-cherries" title="Summer Cherries">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Summer Cherries</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 08 -->
+                            <a href="/summer-cherries.html" title="Ir para o produto" class="card-link">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-8.png" alt="produto-clean-lavander" title="Clean Lavander">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Clean Lavander</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <button>See more</button>
+
+                        </section>
+                    </section>
+                </section>
             </section>
+
+
+           <!-- PRODUTO DESCRIÇÃO -->
+            <section class="product-description">
+                <section class="container">
+                    <section class="product-description-content">
+                        
+                        <!-- ESQUERDA -->
+                        <section class="left">
+                            
+                            <h2 class="section-title">Clean and fragrant soy wax</h2>
+                            
+                            <p>Made for your home and for your wellness</p>
+                            
+                            <ul>
+                                <li><span>Eco-sustainable:</span>All recyclable materials, 0% CO2 emissions</li>
+                                <li><span>Hyphoallergenic:</span> 100% natural, human friendly ingredients </li>
+                                <li><span>Handmade:</span> All candles are craftly made with love.</li>
+                                <li><span>Long burning:</span> No more waste. Created for last long.</li>
+                            </ul>
+
+                            <button>Learn more</button>
+                        </section>
+
+                        <!-- DIREITA -->
+                        <section class="right">
+                            
+                            <h2 class="section-title">Clean and fragrant soy wax</h2>
+                            
+                            <p>Made for your home and for your wellness</p>
+                            
+                            <figure>
+                                <img src="./imagens/produto-descricao.png" alt="product-descricao" title="Clean and fragrant soy wax">
+                            </figure>
+                        </section>
+
+                    </section>
+                </section>
+            </section>
+            
+            <!-- TESTIMONIALS-->
+            <section class="testimonials">
+                <section class="container">
+                    <section class="testimonials-content">
+                        <h2 class="section-title">Testimonials</h2>
+                        <p class="section-description">Some quotes from our happy customers</p>
+                        <section class="gallery">
+                            <!-- CARD 01-->
+                            <section class="card">
+                                <figure>
+                                    <img src="./imagens/testimonials-1.png" alt="testimonials-profile" title="I love it! No more air fresheners" class="profile"/>
+                                </figure>
+                                <ul class="review">
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-0.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                </ul> 
+                                <h3>“I love it! No more air fresheners”</h3>
+                                <h4>Luisa</h4>
+                            </section>
+
+                             <!-- CARD 02-->
+                             <section class="card">
+                                <figure>
+                                    <img src="./imagens/testimonials-2.png" alt="testimonials-profile" title="Raccomended for everyone" class="profile"/>
+                                </figure>
+                                <ul class="review">
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                </ul> 
+                                <h3>“Raccomended for everyone”</h3>
+                                <h4>Edoardo</h4>
+                             </section>
+
+                              <!-- CARD 03-->
+                            <section class="card">
+                                <figure>
+                                    <img src="./imagens/testimonials-3.png" alt="testimonials-profile" title="Looks very natural, the smell is awesome" class="profile"/>   
+                                </figure>
+                                <ul class="review">
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-1.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./imagens/star-0.png" alt="star-testimonials-review" title="Testimonials Review"/>
+                                        </figure>
+                                    </li>
+                                </ul> 
+                                <h3>“Looks very natural, the smell is awesome”</h3>
+                                <h4>Mart</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+           <!-- PRODUTOS POPULAR -->
+            <section class="products-gallery products-popular"> 
+                <section class="container">
+                    <section class="products-gallery-content"> 
+                        
+                        <h2 class="section-title">Popular</h2>
+                        <p class="section-description">Our top selling product that you may like</p>
+                        
+                        <section class="gallery">
+                            <!-- CARD 01 -->
+                            <a href="/spiced-mint.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-1.png" alt="produto-spiced-mint" title="Spiced Mint">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Spiced Mint</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+                            
+                            <!-- CARD 02 -->
+                            <a href="/sweet-straweberry.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-2.png" alt="produto-sweet-straweberry" title="Sweet Straweberry">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Sweet Straweberry</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 03 -->
+                            <a href="/cool-blueberries.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-3.png" alt="produto-cool-blueberries" title="Cool Blueberries">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Cool Blueberries</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <!-- CARD 04 -->
+                            <a href="/juicy-lemon.html" title="Ir para o produto">
+                                <section class="card">
+                                    <figure>
+                                        <img src="./imagens/produto-4.png" alt="produto-juicy-lemon" title="Juicy Lemon">
+                                    </figure>
+                                    <section class="card-description">
+                                        <h3 class="name">Juicy Lemon</h3>
+                                        <p class="price">9.99$</p>
+                                    </section>
+                                </section>
+                            </a>
+
+                            <button>See more</button>
+                        </section>
+
+                    </section>
+                </section>
+            </section>
+
+            
         </main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- FOOOTER -->
+        <footer>
+            <!-- LOGO E MENU -->
+            <section class="footer-menus">
+                <section class="container">
+                    <section class="footer-menus-content">
+                        <!-- LOGO -->
+                        <section class="logo-content">
+                            <figure>
+                                <img src="./imagens/logo-white.png" alt="logo-footer" title="Logo Candleaf"/>
+                            </figure>
+                            <p>Your natural candle made for your home and for your wellness.</p>
+                        </section>
+
+                       <!-- MENU -->
+                        <section class="footer-menu">
+                            <!-- MENU 01 -->
+                            <section class="menu-item">
+                                <h3>Discovery</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" title="New season">New season</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Most searched">Most searched</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Most selled">Most selled</a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- MENU 02 -->
+                            <section class="menu-item">
+                                <h3>About</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" title="Help">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Shipping">Shipping</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Affiliate">Affiliate</a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- MENU 03 -->
+                            <section class="menu-item">
+                                <h3>Info</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" title="Help">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Shipping">Privacy Policies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Affiliate">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <!-- CREDITOS -->
+            <section class="footer-credits">
+                <section class="container">
+                    <section class="footer-credits-content">
+                        <p>©Candleaf All Rights Reserved.</p>
+                        <p>Designed with ❤️ by uxbly</p>
+                    </section>
+                </section>
+            </section>
+        </footer>
+
+
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
