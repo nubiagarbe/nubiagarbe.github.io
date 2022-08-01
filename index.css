@@ -55,7 +55,7 @@ button,
     cursor: pointer;
     transition:.3s ease;
 }
-button:hover
+button:hover,
 .button:hover,
 button:focus,
 .button:focus,
@@ -111,6 +111,7 @@ button:active,
     max-width: 1440px;
     height: 75px;
     width: 100%;
+    border-bottom: 0.5px solid rgba(86, 178, 128, 0.2);
 }
 
 .header-fixed {

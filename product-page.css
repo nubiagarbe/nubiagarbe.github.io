@@ -1,0 +1,260 @@
+.product-page-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 114px;
+    padding-top: 47px;
+}
+
+.product-page-content h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.9px;
+    color: #272727;
+}
+
+.product-specifications,
+.product-subscribe{
+    border: 1px solid #E6E6E6;
+    border-radius: 7px;
+    padding: 22px;
+}
+
+.product-specifications p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #849A8E ;
+    padding: 4px 0;
+}
+
+.product-specifications p span{
+    color: #1D252C;
+}
+.product-add-to-cart{
+    padding-top: 67px;
+    display: flex;
+    justify-content: end;
+}
+.product-specifications{
+    margin-top: 40px;
+}
+.product-add-to-cart .button{
+    padding: 10px 0;
+    width: 350px;
+    height: 42px;
+}
+
+.product-add-to-cart .button:hover{
+    color: #56B280;
+    border: 1px solid #56B280;
+    background-color: #fff;
+    
+}
+
+.product-add-to-cart .button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-add-to-cart .button span::before{
+    content: url(./imagens/cart-whte.png);
+    margin-right: 10px;
+}
+
+.product-add-to-cart .button:hover span::before{
+    content: url(./imagens/cart-green.png);
+    margin-top: 7px;
+    margin-right: 2px;
+}
+.product-subscribe-select,
+.price-subscribe-one,
+.quantity-subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-subscribe-one .price{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.9px;
+    color: #56B280;
+}
+
+.quantity-selector{
+    border: 1px solid #56B280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+.quantity{
+    text-align: center;
+}
+.quantity p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #272727;
+}
+
+.quantity-selector button,
+.quantity-selector span{
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #56B280;
+    height: auto;
+    padding: 0;
+}
+
+.quantity-selector button.prev{
+    color: #818181;   
+}
+
+.quantity-selector span{
+    padding: 0 15px;
+}
+
+.product-subscribe,
+.product-subscribe-one{
+    width: 350px;
+}
+.product-subscribe-one {
+    padding: 22px;
+}
+
+.product-subscribe-one label,
+.product-subscribe label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.9px;
+    color: #272727;
+}
+
+.product-subscribe p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #818181;
+    padding-top: 8px;
+}
+.product-subscribe p a{
+    color: #56B280;
+}
+.info p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #272727;
+    width: 540px;
+    padding-top: 17px;
+}
+
+.shipping p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #56B280;
+    padding-top: 30px;
+}
+
+.product-image img{
+    width: 540px;
+    height: 433px;
+}
+.product-page.mobile{
+    display: none;
+}
+@media(max-width:1024px) {
+    .product-page.desktop{
+        display: none;
+    }
+    .product-page.mobile{
+        display: block;
+    }
+    .product-page.mobile{
+        flex-direction: column;
+    }
+
+    .product-page-content{
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: flex-start;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+    .price-quantity{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .product-subscribe,
+    .product-subscribe-one,
+    .product-add-to-cart .button,
+    .product-image{
+        width: 100%;
+    }
+    .product-add-to-cart{
+        padding-top: 25px;
+        width: 100%;
+    }
+    .product-specifications {
+        margin-top: 25px;
+        width: 100%;
+    }
+    .info p{
+        width: 100%;
+    }
+    .shipping{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .shipping p{
+        padding-top: 10px;
+    }
+}
