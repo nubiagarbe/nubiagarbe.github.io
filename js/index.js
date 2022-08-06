@@ -32,4 +32,22 @@ $(window).scroll(function(){
     }
 });
 
+
+$('.header-menu-mobile').on('click', function(e) {
+    
+    let className = $(this)[0].className
+    
+    if(!className.includes('open')){
+        $(this).addClass('open')
+        $('.menu-mobile').addClass('open')
+    }else{
+        $(this).removeClass('open')
+        $('.menu-mobile').removeClass('open')
+    }
+});
+
+$('.see-more').on('click', function(e){
+    $('.card-produto').removeClass('card-link')
+})
+
       
