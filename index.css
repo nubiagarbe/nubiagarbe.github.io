@@ -566,6 +566,10 @@ button:active,
     font-weight: 800;
 }
 
+.menu-mobile-container{
+    display: none;
+}
+
 /* MOBILE */
 
 @media(max-width:1024px){
@@ -777,4 +781,7 @@ button:active,
         margin-right: 10px;
     }
 
+    .menu-mobile-container{
+        display: block;
+    }
 }
