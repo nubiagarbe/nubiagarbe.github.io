@@ -653,6 +653,10 @@ button:active,
         padding: 47px 10px 120px 10px
     }
 
+    .testimonials-content .gallery::-webkit-scrollbar{
+        display: none;
+    }
+
     .testimonials-content h3{
         width: 230px;
         font-size: 19px;
@@ -691,7 +695,8 @@ button:active,
 
     .hero picture,
     .hero img{
-        width: 100% ;
+        width: 100%;
+        height: 100%;
     }
     .hero .hero-box{
         width: 90%;
