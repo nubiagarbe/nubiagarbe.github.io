@@ -95,11 +95,6 @@
 }
 
 .quantity-selector{
-    border: 1px solid #56B280;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
     margin-top: 5px;
 }
 .quantity{
@@ -114,29 +109,6 @@
     text-align: center;
     letter-spacing: -0.9px;
     color: #272727;
-}
-
-.quantity-selector button,
-.quantity-selector span{
-    background-color: transparent;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: -0.9px;
-    color: #56B280;
-    height: auto;
-    padding: 0;
-}
-
-.quantity-selector button.prev{
-    color: #818181;   
-}
-
-.quantity-selector span{
-    padding: 0 15px;
 }
 
 .product-subscribe,

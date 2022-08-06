@@ -172,13 +172,14 @@ button:active,
 
 /* BANNER */
 .hero{
-    background-image: url(./imagens/hero.png);
     height: 780px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+}
+.hero picture{
+    position: absolute;
 }
 .hero .hero-box{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,6 +190,9 @@ button:active,
     width: 730px;
     height: 349px;
     padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .hero .hero-box h1,
@@ -515,7 +519,52 @@ button:active,
     color: #5E6E89;
 }
 
+.quantity-selector{
+    border: 1px solid #56B280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
 
+.quantity-selector button,
+.quantity-selector span{
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #56B280;
+    height: auto;
+    padding: 0;
+}
+
+.quantity-selector button.prev{
+    color: #818181;   
+}
+
+.quantity-selector span{
+    padding: 0 15px;
+}
+.my-cart{
+    position: relative;
+}
+
+.my-cart::after{
+    content: "1";
+    position: absolute;
+    top: -5px;
+    background-color: #56B280;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    right: -10px;
+    font-weight: 800;
+}
 
 /* MOBILE */
 
@@ -636,16 +685,13 @@ button:active,
         padding-top: 0;
     }
 
-    .hero{
-        padding: 0 24px;
-        background-image: url(./imagens/hero-mobile.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+    .hero picture,
+    .hero img{
+        width: 100% ;
     }
-
     .hero .hero-box{
-        width: 100%;
-        height: auto
+        width: 90%;
+        height: auto;
     }
 
     .hero .hero-box h1{
@@ -674,10 +720,61 @@ button:active,
 
     .header .header-menu-mobile{
         display: block;
+        width: 30px;
+        position: relative;
     }
 
+    .menu-mobile{
+        position: absolute;
+        background-color: #fff;
+        z-index: 1;
+        left: 0;
+        width: 100%;
+        top: 75px;
+        display: none;
+    }
+
+    .menu-mobile.open{
+        display: block;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0 20px 50px;
+    }
+
+    .menu-mobile ul li a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        color: #272727;
+    }
+
+    .menu-item-mobile{
+        margin-left: 20px;
+    }
     .header .header-menu-mobile::after{
         content: url(./imagens/hamburger-menu.png);
+    }
+    
+    .header .header-menu-mobile.open::after{
+        content: url(./imagens/close-menu.png);
+    }
+
+    .menu-home-item1 a::after{
+        content: none;
+    }
+    .menu-home-item1 a::before {
+        content: url(./imagens/arrow-down.png);
+        width: auto;
+        height: auto;
+        margin-right: 10px;
     }
 
 }

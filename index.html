@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Candleaf</title>
+        <link rel="icon" href="./imagens/favicon.png" sizes="32x32" type="image/png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./index.css">
-        <link rel="icon" href="./imagens/favicon.png" sizes="32x32" type="image/png">
         <meta name="description" content="Candleaf, is the nature candle. All handmade with natural soy max, Candleaft is a companion for all your pleasure moments.">
         <meta name="rating" content="general">
     </head>
@@ -20,8 +20,22 @@
             <section class="container">
                 <section class="header-content">
                     
-                    <a href="#" title="Menu" class="header-menu-mobile">
-                    </a>
+                        <section>
+                            <a href="#" title="Menu" class="header-menu-mobile"></a>
+                            <nav class="menu-mobile">
+                                <ul>
+                                    <li class="menu-home-item1">
+                                        <a href="#" title="Discovery">Discovery</a>
+                                    </li>
+                                    <li class="menu-item-mobile">
+                                        <a href="#" title="About">About</a></li>
+                                    <li class="menu-item-mobile">
+                                        <a href="#" title="Contact us">Contact us</a>
+                                    </li>
+                                </ul>   
+                            </nav>
+                        </section>
+
                     
                     <a href="./index.html" title="Logo">
                         <img src="./imagens/logo.png" alt="logo-candleaf" title="Logo Candleaf">
@@ -54,6 +68,10 @@
         <main>
            <!-- BANNER -->
             <section class="hero">
+                <picture>
+                    <source media="(max-width:1024px)" srcset="./imagens/hero-mobile.png">
+                    <img src="./imagens/hero.png" alt="banner-hero" title="Banner Hero">
+                </picture>
                 <section class="hero-box">
                     <i>🌱</i>
                     <h1>The nature candle</h1>
@@ -124,7 +142,7 @@
                             </a>
 
                             <!-- CARD 05 -->
-                            <a href="./product-name.html" title="Ir para o produto" class="card-link">
+                            <a href="./product-name.html" title="Ir para o produto" class="card-produto card-link">
                                 <section class="card">
                                     <figure>
                                         <img src="./imagens/produto-5.png" alt="produto-product-name" title="Product name">
@@ -137,7 +155,7 @@
                             </a>
 
                             <!-- CARD 06 -->
-                            <a href="./fragrant-cinnamon.html" title="Ir para o produto" class="card-link">
+                            <a href="./fragrant-cinnamon.html" title="Ir para o produto" class="card-produto card-link">
                                 <section class="card">
                                     <figure>
                                         <img src="./imagens/produto-6.png" alt="produto-fragrant-cinnamon" title="Fragrant Cinnamon">
@@ -150,7 +168,7 @@
                             </a>
 
                             <!-- CARD 07 -->
-                            <a href="./summer-cherries.html" title="Ir para o produto" class="card-link">
+                            <a href="./summer-cherries.html" title="Ir para o produto" class="card-produto card-link">
                                 <section class="card">
                                     <figure>
                                         <img src="./imagens/produto-7.png" alt="produto-summer-cherries" title="Summer Cherries">
@@ -163,7 +181,7 @@
                             </a>
 
                             <!-- CARD 08 -->
-                            <a href="./summer-cherries.html" title="Ir para o produto" class="card-link">
+                            <a href="./clean-lavander.html" title="Ir para o produto" class="card-produto card-link">
                                 <section class="card">
                                     <figure>
                                         <img src="./imagens/produto-8.png" alt="produto-clean-lavander" title="Clean Lavander">
@@ -175,7 +193,7 @@
                                 </section>
                             </a>
 
-                            <button>See more</button>
+                            <button class="see-more">See more</button>
 
                         </section>
                     </section>
@@ -401,7 +419,7 @@
                                 </section>
                             </a>
 
-                            <button>See more</button>
+                            <!-- <button class="see-more">See more</button> -->
                         </section>
 
                     </section>
