@@ -653,9 +653,7 @@ button:active,
         padding: 47px 10px 120px 10px
     }
 
-    .testimonials-content .gallery::-webkit-scrollbar{
-        display: none;
-    }
+    .testimonials-content .gallery 
 
     .testimonials-content h3{
         width: 230px;
