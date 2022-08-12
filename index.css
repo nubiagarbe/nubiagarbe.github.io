@@ -787,4 +787,12 @@ button:active,
     .menu-mobile-container{
         display: block;
     }
+
+    .testimonials-content .card{
+        width: 290px;
+    }
+
+    .testimonials-content .gallery::-webkit-scrollbar{
+        display: none;
+    }
 }
